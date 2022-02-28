@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -40,18 +41,48 @@
                                     <segue destination="jak-ch-Kp9" kind="showDetail" id="jmt-yU-4RH"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- все о лекарственных препаратах, совместимость, применение,  противопоказания и не только" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fb6-rF-Mwn">
+                                <rect key="frame" x="20" y="146" width="374" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check it easy!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1K-8n-r8U">
+                                <rect key="frame" x="121" y="99" width="194" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="B1K-8n-r8U" secondAttribute="height" multiplier="194:39" id="DZC-0q-oCd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Приложение не содержит полного перечня лекарственных средств, форм и действующих веществ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ua3-Ha-tfV">
+                                <rect key="frame" x="79" y="732" width="256" height="81.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="AGQ-bs-TId" firstAttribute="top" secondItem="JbK-Gj-Yye" secondAttribute="bottom" constant="69" id="2y6-vG-Htm"/>
                             <constraint firstItem="AGQ-bs-TId" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="441" id="5pH-au-lNg"/>
+                            <constraint firstItem="Fb6-rF-Mwn" firstAttribute="top" secondItem="B1K-8n-r8U" secondAttribute="bottom" constant="8" symbolic="YES" id="6nC-Mo-Rdy"/>
                             <constraint firstItem="BtT-Cj-rID" firstAttribute="baseline" secondItem="AGQ-bs-TId" secondAttribute="firstBaseline" id="79r-GI-xb7"/>
                             <constraint firstItem="AGQ-bs-TId" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DBs-cY-bdQ"/>
                             <constraint firstItem="JbK-Gj-Yye" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="DrP-pW-i7f"/>
+                            <constraint firstItem="B1K-8n-r8U" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="IMc-2A-fqr"/>
                             <constraint firstItem="JbK-Gj-Yye" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="296" id="RJy-Ej-Nwc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ua3-Ha-tfV" secondAttribute="trailing" constant="79" id="SzD-bO-hsd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B1K-8n-r8U" secondAttribute="trailing" constant="99" id="V04-YE-eEy"/>
+                            <constraint firstItem="ua3-Ha-tfV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="324.75" id="WyY-uH-yxL"/>
                             <constraint firstItem="BtT-Cj-rID" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Z22-w8-gn5"/>
+                            <constraint firstItem="Fb6-rF-Mwn" firstAttribute="leading" secondItem="BtT-Cj-rID" secondAttribute="leading" id="fch-iY-Jcm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JbK-Gj-Yye" secondAttribute="trailing" constant="23" id="jLI-Bn-b2g"/>
+                            <constraint firstItem="B1K-8n-r8U" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="meV-jI-uoA"/>
+                            <constraint firstItem="ua3-Ha-tfV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="79" id="t7H-Cv-xCF"/>
+                            <constraint firstItem="Fb6-rF-Mwn" firstAttribute="centerX" secondItem="AGQ-bs-TId" secondAttribute="centerX" id="wMW-1L-noy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BtT-Cj-rID" secondAttribute="trailing" constant="196" id="zVl-Eu-Rz3"/>
                         </constraints>
                     </view>
@@ -118,7 +149,6 @@
         <!--View Controller-->
         <scene sceneID="onT-tZ-HmB">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hq5-N9-BLj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="39Q-Kl-lyx" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C1g-r5-ZmF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -140,13 +170,13 @@
                         </constraints>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hq5-N9-BLj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3451" y="104"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="b2o-1o-Qgv">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bdo-Hs-puL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="tsP-RN-mUK" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aqV-sO-YL1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -168,13 +198,13 @@
                         </constraints>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bdo-Hs-puL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2765" y="104"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="qbA-sW-qrX">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="z7N-ds-wmW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="ByX-hQ-tvY" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7yT-oJ-Ycu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -195,13 +225,13 @@
                         </constraints>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z7N-ds-wmW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2072" y="104"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hDO-ce-GfK">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L7k-xu-uyw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="EWL-BN-87C" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hRk-ba-CRU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -223,13 +253,13 @@
                         </constraints>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L7k-xu-uyw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1383" y="104"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="vfu-hg-75Y">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cr2-Dg-q8H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="tQs-yZ-Tgj" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8fo-vU-T28">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -251,6 +281,7 @@
                         </constraints>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cr2-Dg-q8H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-712" y="104"/>
         </scene>
@@ -428,7 +459,6 @@
         <!--View Controller-->
         <scene sceneID="dJZ-yU-uld">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hLf-NC-YW0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="hBq-aO-SQI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Blg-4L-Kqy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -449,6 +479,7 @@
                         </constraints>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hLf-NC-YW0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="699" y="767"/>
         </scene>
